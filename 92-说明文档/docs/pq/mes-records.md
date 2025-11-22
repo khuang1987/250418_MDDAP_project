@@ -40,5 +40,5 @@ in
 ## 相关链接
 
 - [Power Query 概述](index.md)
-- [数据源说明](../sa/data-sources.md)
+- [数据源说明](../kpi/sa.md#-数据源说明)
 

@@ -1,0 +1,87 @@
+2025-11-21 12:17:05,951 - INFO - 输出文件名: SAP_Routing_latest.parquet
+2025-11-21 12:17:05,953 - INFO - ================================================================================
+2025-11-21 12:17:05,954 - INFO - 开始转换和合并标准时间表
+2025-11-21 12:17:05,955 - INFO - ================================================================================
+2025-11-21 12:17:05,955 - INFO - 读取Routing CSV文件: C:\Users\huangk14\OneDrive - Medtronic PLC\Huangkai Files\B1_Project\250418_MDDAP_project\10-SA指标\11数据模板\1303 Routing及机加工产品清单_1303 Routing.csv
+2025-11-21 12:17:06,202 - INFO - Routing表读取成功，共 38293 行数据
+2025-11-21 12:17:06,430 - INFO - Routing表处理完成，共 38293 行数据
+2025-11-21 12:17:06,431 - INFO - 读取机加工清单CSV文件: C:\Users\huangk14\OneDrive - Medtronic PLC\Huangkai Files\B1_Project\250418_MDDAP_project\10-SA指标\11数据模板\1303 Routing及机加工产品清单_1303机加工清单.csv
+2025-11-21 12:17:06,446 - INFO - 机加工清单表读取成功，共 3699 行数据
+2025-11-21 12:17:06,464 - ERROR - 转换和合并标准时间表失败: 'Operation'
+2025-11-21 12:17:06,465 - ERROR - 程序执行失败: 'Operation'
+2025-11-21 12:18:53,376 - INFO - 输出文件名: SAP_Routing_latest.parquet
+2025-11-21 12:18:53,377 - INFO - ================================================================================
+2025-11-21 12:18:53,377 - INFO - 开始转换和合并标准时间表
+2025-11-21 12:18:53,377 - INFO - ================================================================================
+2025-11-21 12:18:53,378 - INFO - 读取Routing CSV文件: C:\Users\huangk14\OneDrive - Medtronic PLC\Huangkai Files\B1_Project\250418_MDDAP_project\10-SA指标\11数据模板\1303 Routing及机加工产品清单_1303 Routing.csv
+2025-11-21 12:18:53,441 - INFO - Routing表读取成功，共 38293 行数据
+2025-11-21 12:18:53,593 - INFO - Routing表处理完成，共 38293 行数据
+2025-11-21 12:18:53,593 - INFO - 读取机加工清单CSV文件: C:\Users\huangk14\OneDrive - Medtronic PLC\Huangkai Files\B1_Project\250418_MDDAP_project\10-SA指标\11数据模板\1303 Routing及机加工产品清单_1303机加工清单.csv
+2025-11-21 12:18:53,603 - INFO - 机加工清单表读取成功，共 3699 行数据
+2025-11-21 12:18:53,838 - INFO - 合并完成，合并后共 38293 行数据
+2025-11-21 12:18:53,840 - INFO - 匹配到OEE: 3647 行
+2025-11-21 12:18:53,841 - INFO - 匹配到调试时间: 2521 行
+2025-11-21 12:18:54,261 - INFO - 已保存Parquet文件: C:/Users/huangk14/OneDrive - Medtronic PLC/CZ Production - 文档/General/POWER BI 数据源 V2/30-MES导出数据/publish\SAP_Routing_latest.parquet, 行数: 38293
+2025-11-21 12:18:54,275 - INFO - 数据量较大(38293行)，Excel文件只保存前10000行
+2025-11-21 12:18:58,010 - INFO - 已保存Excel验证文件: C:/Users/huangk14/OneDrive - Medtronic PLC/CZ Production - 文档/General/POWER BI 数据源 V2/30-MES导出数据/publish\excel\SAP_Routing_latest.xlsx, 行数: 10000
+2025-11-21 12:18:58,013 - INFO - 已保存合并后的标准时间表Parquet文件: C:/Users/huangk14/OneDrive - Medtronic PLC/CZ Production - 文档/General/POWER BI 数据源 V2/30-MES导出数据/publish\SAP_Routing_latest.parquet, 行数: 38293
+2025-11-21 12:18:58,019 - INFO - ================================================================================
+2025-11-21 12:18:58,019 - INFO - 转换和合并完成！
+2025-11-21 12:18:58,019 - INFO - ================================================================================
+2025-11-21 12:19:13,595 - INFO - 输出文件名: SAP_Routing_latest.parquet
+2025-11-21 12:19:13,596 - INFO - ================================================================================
+2025-11-21 12:19:13,596 - INFO - 开始转换和合并标准时间表
+2025-11-21 12:19:13,596 - INFO - ================================================================================
+2025-11-21 12:19:13,597 - INFO - 读取Routing CSV文件: C:\Users\huangk14\OneDrive - Medtronic PLC\Huangkai Files\B1_Project\250418_MDDAP_project\10-SA指标\11数据模板\1303 Routing及机加工产品清单_1303 Routing.csv
+2025-11-21 12:19:13,674 - INFO - Routing表读取成功，共 38293 行数据
+2025-11-21 12:19:13,922 - INFO - Routing表处理完成，共 38293 行数据
+2025-11-21 12:19:13,922 - INFO - 读取机加工清单CSV文件: C:\Users\huangk14\OneDrive - Medtronic PLC\Huangkai Files\B1_Project\250418_MDDAP_project\10-SA指标\11数据模板\1303 Routing及机加工产品清单_1303机加工清单.csv
+2025-11-21 12:19:13,933 - INFO - 机加工清单表读取成功，共 3699 行数据
+2025-11-21 12:19:14,040 - INFO - 合并完成，合并后共 38293 行数据
+2025-11-21 12:19:14,042 - INFO - 匹配到OEE: 3647 行
+2025-11-21 12:19:14,043 - INFO - 匹配到调试时间: 2521 行
+2025-11-21 12:19:14,286 - INFO - 已保存Parquet文件: C:/Users/huangk14/OneDrive - Medtronic PLC/CZ Production - 文档/General/POWER BI 数据源 V2/30-MES导出数据/publish\SAP_Routing_latest.parquet, 行数: 38293
+2025-11-21 12:19:14,299 - INFO - 数据量较大(38293行)，Excel文件只保存前10000行
+2025-11-21 12:19:17,970 - INFO - 已保存Excel验证文件: C:/Users/huangk14/OneDrive - Medtronic PLC/CZ Production - 文档/General/POWER BI 数据源 V2/30-MES导出数据/publish\excel\SAP_Routing_latest.xlsx, 行数: 10000
+2025-11-21 12:19:17,972 - INFO - 已保存合并后的标准时间表Parquet文件: C:/Users/huangk14/OneDrive - Medtronic PLC/CZ Production - 文档/General/POWER BI 数据源 V2/30-MES导出数据/publish\SAP_Routing_latest.parquet, 行数: 38293
+2025-11-21 12:19:17,976 - INFO - ================================================================================
+2025-11-21 12:19:17,977 - INFO - 转换和合并完成！
+2025-11-21 12:19:17,977 - INFO - ================================================================================
+2025-11-21 12:20:20,216 - INFO - 输出文件名: SAP_Routing_latest.parquet
+2025-11-21 12:20:20,217 - INFO - ================================================================================
+2025-11-21 12:20:20,218 - INFO - 开始转换和合并标准时间表
+2025-11-21 12:20:20,218 - INFO - ================================================================================
+2025-11-21 12:20:20,219 - INFO - 读取Routing CSV文件: C:\Users\huangk14\OneDrive - Medtronic PLC\Huangkai Files\B1_Project\250418_MDDAP_project\10-SA指标\11数据模板\1303 Routing及机加工产品清单_1303 Routing.csv
+2025-11-21 12:20:20,281 - INFO - Routing表读取成功，共 38293 行数据
+2025-11-21 12:20:20,440 - INFO - Routing表处理完成，共 38293 行数据
+2025-11-21 12:20:20,441 - INFO - 读取机加工清单CSV文件: C:\Users\huangk14\OneDrive - Medtronic PLC\Huangkai Files\B1_Project\250418_MDDAP_project\10-SA指标\11数据模板\1303 Routing及机加工产品清单_1303机加工清单.csv
+2025-11-21 12:20:20,449 - INFO - 机加工清单表读取成功，共 3699 行数据
+2025-11-21 12:20:20,521 - INFO - 合并完成，合并后共 38293 行数据
+2025-11-21 12:20:20,523 - INFO - 匹配到OEE: 3647 行
+2025-11-21 12:20:20,523 - INFO - 匹配到调试时间: 2521 行
+2025-11-21 12:20:20,689 - INFO - 已保存Parquet文件: C:/Users/huangk14/OneDrive - Medtronic PLC/CZ Production - 文档/General/POWER BI 数据源 V2/30-MES导出数据/publish\SAP_Routing_latest.parquet, 行数: 38293
+2025-11-21 12:20:20,698 - INFO - 数据量较大(38293行)，Excel文件只保存前10000行
+2025-11-21 12:20:23,643 - INFO - 已保存Excel验证文件: C:/Users/huangk14/OneDrive - Medtronic PLC/CZ Production - 文档/General/POWER BI 数据源 V2/30-MES导出数据/publish\excel\SAP_Routing_latest.xlsx, 行数: 10000
+2025-11-21 12:20:23,645 - INFO - 已保存合并后的标准时间表Parquet文件: C:/Users/huangk14/OneDrive - Medtronic PLC/CZ Production - 文档/General/POWER BI 数据源 V2/30-MES导出数据/publish\SAP_Routing_latest.parquet, 行数: 38293
+2025-11-21 12:20:23,650 - INFO - ================================================================================
+2025-11-21 12:20:23,651 - INFO - 转换和合并完成！
+2025-11-21 12:20:23,652 - INFO - ================================================================================
+2025-11-21 13:11:39,629 - INFO - 输出文件名: SAP_Routing_latest.parquet
+2025-11-21 13:11:39,632 - INFO - ================================================================================
+2025-11-21 13:11:39,633 - INFO - 开始转换和合并标准时间表
+2025-11-21 13:11:39,634 - INFO - ================================================================================
+2025-11-21 13:11:39,635 - INFO - 读取Routing CSV文件: C:\Users\huangk14\OneDrive - Medtronic PLC\Huangkai Files\B1_Project\250418_MDDAP_project\10-SA指标\11数据模板\1303 Routing及机加工产品清单_1303 Routing.csv
+2025-11-21 13:11:39,784 - INFO - Routing表读取成功，共 38293 行数据
+2025-11-21 13:11:40,004 - INFO - Routing表处理完成，共 38293 行数据
+2025-11-21 13:11:40,004 - INFO - 读取机加工清单CSV文件: C:\Users\huangk14\OneDrive - Medtronic PLC\Huangkai Files\B1_Project\250418_MDDAP_project\10-SA指标\11数据模板\1303 Routing及机加工产品清单_1303机加工清单.csv
+2025-11-21 13:11:40,059 - INFO - 机加工清单表读取成功，共 3699 行数据
+2025-11-21 13:11:40,245 - INFO - 合并完成，合并后共 38293 行数据
+2025-11-21 13:11:40,248 - INFO - 匹配到OEE: 3647 行
+2025-11-21 13:11:40,249 - INFO - 匹配到调试时间: 2521 行
+2025-11-21 13:11:40,665 - INFO - 已保存Parquet文件: C:/Users/huangk14/OneDrive - Medtronic PLC/CZ Production - 文档/General/POWER BI 数据源 V2/30-MES导出数据/publish\SAP_Routing_latest.parquet, 行数: 38293
+2025-11-21 13:11:40,674 - INFO - 数据量较大(38293行)，Excel文件只保存前10000行
+2025-11-21 13:11:44,180 - INFO - 已保存Excel验证文件: C:/Users/huangk14/OneDrive - Medtronic PLC/CZ Production - 文档/General/POWER BI 数据源 V2/30-MES导出数据/publish\excel\SAP_Routing_latest.xlsx, 行数: 10000
+2025-11-21 13:11:44,183 - INFO - 已保存合并后的标准时间表Parquet文件: C:/Users/huangk14/OneDrive - Medtronic PLC/CZ Production - 文档/General/POWER BI 数据源 V2/30-MES导出数据/publish\SAP_Routing_latest.parquet, 行数: 38293
+2025-11-21 13:11:44,189 - INFO - ================================================================================
+2025-11-21 13:11:44,190 - INFO - 转换和合并完成！
+2025-11-21 13:11:44,191 - INFO - ================================================================================

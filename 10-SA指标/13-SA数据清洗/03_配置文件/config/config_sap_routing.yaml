@@ -1,0 +1,25 @@
+# SAP Routing标准时间表转换配置
+
+logging:
+  level: INFO
+  file: ../06_日志文件/etl_sap_routing.log
+
+output:
+  base_dir: "C:/Users/huangk14/OneDrive - Medtronic PLC/CZ Production - 文档/General/POWER BI 数据源 V2/30-MES导出数据/publish"
+  parquet:
+    compression: snappy
+  excel:
+    enabled: true
+    max_rows: 10000
+    include_stats: true
+
+source:
+  csv_base_dir: "../../11数据模板"
+  routing_csv: "1303 Routing及机加工产品清单_1303 Routing.csv"
+  machining_csv: "1303 Routing及机加工产品清单_1303机加工清单.csv"
+
+processing:
+  encoding: utf-8
+  skip_rows: 0
+  clean_na: true
+  validate_data: true

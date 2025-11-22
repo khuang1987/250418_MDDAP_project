@@ -62,7 +62,7 @@ echo   ✅ 部署成功！
 echo ========================================
 echo.
 echo 您的文档已部署到 GitHub Pages
-echo 访问地址：https://您的用户名.github.io/250418_MDDAP_project/
+echo 访问地址：https://khuang1987.github.io/250418_MDDAP_project/
 echo.
 echo 注意：GitHub Pages 可能需要几分钟才能更新
 echo.

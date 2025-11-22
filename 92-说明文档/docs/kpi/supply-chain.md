@@ -49,7 +49,7 @@ SA(\%) = \frac{\text{按期完成的批次数}}{\text{总批次数}} \times 100\
 
 **数据来源：** MES 系统、SFC 系统、标准时间表
 
-**详细说明：** 👉 **[SA 指标完整文档](../sa/index.md)**
+**详细说明：** 👉 **[SA 指标完整文档](sa.md)**
 
 ---
 
@@ -164,10 +164,10 @@ OTD(\%) = \frac{\text{按时交付订单}}{\text{总订单数量}} \times 100\%
 - 改善生产计划准确性
 
 **相关资源：**
-- [SA 计算方法](../sa/calculation-definition.md)
-- [SA 字段说明](../sa/field-specification.md)
-- [SA 数据源](../sa/data-sources.md)
-- [SA 计算示例](../sa/examples.md)
+- [SA 计算方法](sa.md#-计算方法与定义)
+- [SA 字段说明](sa.md#-字段说明)
+- [SA 数据源](sa.md#-数据源说明)
+- [SA 计算示例](sa.md#-计算示例)
 
 ---
 
@@ -183,7 +183,7 @@ OTD(\%) = \frac{\text{按时交付订单}}{\text{总订单数量}} \times 100\%
 
 ## 🔗 相关链接
 
-- [SA - 计划达成率详细说明](../sa/index.md)
+- [SA - 计划达成率详细说明](sa.md)
 - [KPI 指标体系概述](index.md)
 - [生产部门 KPI](production.md)
 - [质量部门 KPI](quality.md)

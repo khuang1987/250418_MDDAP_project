@@ -98,7 +98,7 @@ Source = Excel.Workbook(File.Contents("file.xlsx"))
 
 ## 相关资源
 
-- [数据源说明](../sa/data-sources.md)
+- [数据源说明](../kpi/sa.md#-数据源说明)
 - [增量刷新方案](incremental-refresh.md)
 - [数据更新流程](../guide/data-update.md)
 

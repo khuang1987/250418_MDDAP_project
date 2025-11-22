@@ -32,9 +32,9 @@
 **您可能需要：**
 
 1. 📊 **了解 SA 指标**
-   - [SA 指标概述](../sa/index.md)
-   - [计算方法与定义](../sa/calculation-definition.md)
-   - [字段说明](../sa/field-specification.md)
+   - [SA 指标概述](../kpi/sa.md)
+   - [计算方法与定义](../kpi/sa.md#-计算方法与定义)
+   - [字段说明](../kpi/sa.md#-字段说明)
 
 2. 📈 **了解 KPI 指标**
    - [KPI 指标概述](../kpi/index.md)
@@ -62,7 +62,7 @@
    - [故障排查](troubleshooting.md)
 
 3. 📂 **数据源管理**
-   - [数据源说明](../sa/data-sources.md)
+   - [数据源说明](../kpi/sa.md#-数据源说明)
 
 ---
 
@@ -76,7 +76,7 @@
 
 2. 🔍 **查询字段定义**
    - 使用顶部搜索框输入字段名
-   - 参考 [SA 字段说明](../sa/field-specification.md)
+   - 参考 [SA 字段说明](../kpi/sa.md#-字段说明)
 
 3. ❓ **解决问题**
    - 查看 [常见问题](faq.md)
@@ -94,7 +94,7 @@
    - [会议纪要](../project/meetings/index.md)
 
 2. 📊 **整体架构**
-   - [数据源说明](../sa/data-sources.md)
+   - [数据源说明](../kpi/sa.md#-数据源说明)
    - [ETL 流程](../etl/index.md)
 
 ---
@@ -109,17 +109,17 @@
 3. 查看搜索结果
 
 **方法 2：查看字段说明**
-- [SA 字段说明](../sa/field-specification.md)
-- [KPI 字段说明](../kpi/kpi-specification.md)
+- [SA 字段说明](../kpi/sa.md#-字段说明)
+- [KPI 指标体系](../kpi/index.md)
 
 ---
 
 ### 场景 2：我想了解 SA 指标如何计算
 
 **推荐路径：**
-1. [SA 指标概述](../sa/index.md) - 了解基本概念
-2. [计算方法与定义](../sa/calculation-definition.md) - 详细计算公式
-3. [计算示例](../sa/examples.md) - 实际案例演示
+1. [SA 指标概述](../kpi/sa.md) - 了解基本概念
+2. [计算方法与定义](../kpi/sa.md#-计算方法与定义) - 详细计算公式
+3. [计算示例](../kpi/sa.md#-计算示例) - 实际案例演示
 
 ---
 
@@ -135,37 +135,37 @@
 ### 场景 4：我想开发 Power BI 报表
 
 **推荐路径：**
-1. [数据源说明](../sa/data-sources.md) - 了解数据位置和格式
+1. [数据源说明](../kpi/sa.md#-数据源说明) - 了解数据位置和格式
 2. [Power Query 代码](../pq/index.md) - 参考现有查询
 3. [增量刷新方案](../pq/incremental-refresh.md) - 优化性能
 
 ---
 
-## 📚 学习路径
+## 学习路径
 
-### 🌱 初级（1-2 天）
+### 初级（1-2 天）
 
-1. 阅读 [SA 指标概述](../sa/index.md)
-2. 浏览 [KPI 指标概述](../kpi/index.md)
-3. 了解 [数据源](../sa/data-sources.md)
-4. 查看 [字段说明](../sa/field-specification.md)
+1. 阅读 [SA 指标概述](../kpi/sa.md#sa-overview)
+2. 理解 [计算方法](../kpi/sa.md#calculation-method)
+3. 了解 [数据源](../kpi/sa.md#data-sources)
+4. 查看 [字段说明](../kpi/sa.md#field-specification)
 
 **目标：** 理解核心概念和数据结构
 
 ---
 
-### 🌿 中级（3-5 天）
+### 中级（3-5 天）
 
-1. 深入学习 [计算方法](../sa/calculation-definition.md)
-2. 阅读 [ETL 流程](../etl/index.md)
-3. 学习 [Power Query 代码](../pq/index.md)
-4. 实践 [计算示例](../sa/examples.md)
+1. 深入学习 [计算方法](../kpi/sa.md#calculation-method)
+2. 分析 [计算示例](../kpi/sa.md#calculation-example)
+3. 理解 [字段定义](../kpi/sa.md#field-specification)
+4. 实践 [计算示例](../kpi/sa.md#calculation-example)
 
 **目标：** 掌握计算逻辑和数据处理流程
 
 ---
 
-### 🌳 高级（1-2 周）
+### 高级（1-2 周）
 
 1. 配置和运行 [ETL 脚本](../etl/etl-sa.md)
 2. 开发自定义 Power BI 报表
@@ -201,7 +201,7 @@
 根据您的角色，选择以下路径之一：
 
 === "数据分析师"
-    👉 继续阅读 [SA 指标详细说明](../sa/calculation-definition.md)
+    👉 继续阅读 [SA 指标详细说明](../kpi/sa.md#-计算方法与定义)
 
 === "数据工程师"
     👉 继续阅读 [ETL 流程说明](../etl/etl-process.md)

@@ -1,0 +1,688 @@
+2025-11-21 12:20:28,627 - INFO - ============================================================
+2025-11-21 12:20:28,627 - INFO - 用户选择: 全量刷新
+2025-11-21 12:20:28,627 - INFO - ============================================================
+2025-11-21 12:20:28,628 - INFO - 执行全量刷新：清除状态文件和历史数据文件
+2025-11-21 12:20:28,629 - INFO - 已删除状态文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\etl_sfc_state.json
+2025-11-21 12:20:28,630 - INFO - 已删除历史数据文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet
+2025-11-21 12:20:28,645 - INFO - 测试模式：只处理最近 20 个SFC文件（共找到 479 个）
+2025-11-21 12:20:28,646 - INFO - 找到 20 个SFC文件（将处理）
+2025-11-21 12:20:28,647 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251120200001.xlsx
+2025-11-21 12:20:34,851 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251120200001.xlsx, 共 14691 行数据
+2025-11-21 12:20:36,072 - INFO - 文件 LC-20251120200001.xlsx: 总数据 14691 行，已处理 0 行，新数据 14691 行
+2025-11-21 12:20:36,380 - INFO - 状态更新完成：文件 LC-20251120200001.xlsx，新记录 14684 条，总记录数 14684 条
+2025-11-21 12:20:36,381 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:20:36,596 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:20:36,686 - INFO - 第一步CFN匹配后，还有 2139 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:20:36,739 - INFO - 第二步Material Number匹配成功: 151 条记录
+2025-11-21 12:20:36,742 - INFO - 合并标准时间数据完成: 15971 行
+2025-11-21 12:20:36,743 - INFO - 匹配到标准时间: 13852 行
+2025-11-21 12:20:36,744 - INFO - 匹配到EH_machine(s): 13852 行
+2025-11-21 12:20:36,744 - INFO - 匹配到EH_labor(s): 13852 行
+2025-11-21 12:20:36,746 - INFO - 匹配到OEE: 15971 行
+2025-11-21 12:20:36,746 - INFO - 匹配到Setup Time (h): 1515 行
+2025-11-21 12:20:36,757 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 10239 条，总计 15971 条
+2025-11-21 12:20:36,859 - INFO - 计算 PreviousBatchEndTime 完成：总计 15971 条，成功计算 10224 条（其中有效machine记录 10224 条）
+2025-11-21 12:20:40,843 - INFO - 历史数据文件不存在，直接使用新数据
+2025-11-21 12:20:41,077 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 15971
+2025-11-21 12:20:47,682 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 15971
+2025-11-21 12:20:47,684 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251120200001.xlsx
+2025-11-21 12:20:47,684 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251119200001.xlsx
+2025-11-21 12:20:50,388 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251119200001.xlsx, 共 14649 行数据
+2025-11-21 12:20:52,086 - INFO - 文件 LC-20251119200001.xlsx: 总数据 14649 行，已处理 14084 行，新数据 565 行
+2025-11-21 12:20:52,392 - INFO - 状态更新完成：文件 LC-20251119200001.xlsx，新记录 14643 条，总记录数 15249 条
+2025-11-21 12:20:52,395 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:20:52,432 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:20:52,471 - INFO - 第一步CFN匹配后，还有 96 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:20:52,506 - INFO - 第二步Material Number匹配成功: 4 条记录
+2025-11-21 12:20:52,507 - INFO - 合并标准时间数据完成: 613 行
+2025-11-21 12:20:52,508 - INFO - 匹配到标准时间: 517 行
+2025-11-21 12:20:52,508 - INFO - 匹配到EH_machine(s): 517 行
+2025-11-21 12:20:52,509 - INFO - 匹配到EH_labor(s): 517 行
+2025-11-21 12:20:52,509 - INFO - 匹配到OEE: 613 行
+2025-11-21 12:20:52,510 - INFO - 匹配到Setup Time (h): 40 行
+2025-11-21 12:20:52,514 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 377 条，总计 613 条
+2025-11-21 12:20:52,551 - INFO - 计算 PreviousBatchEndTime 完成：总计 613 条，成功计算 364 条（其中有效machine记录 364 条）
+2025-11-21 12:20:52,878 - INFO - 加载历史SFC数据: 15971 行
+2025-11-21 12:20:52,928 - INFO - 数据合并完成：历史 15971 行 + 新增 613 行 = 合并后 15249 行
+2025-11-21 12:20:53,191 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 15249
+2025-11-21 12:20:59,557 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 15249
+2025-11-21 12:20:59,558 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251119200001.xlsx
+2025-11-21 12:20:59,559 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251118200001.xlsx
+2025-11-21 12:21:01,393 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251118200001.xlsx, 共 14395 行数据
+2025-11-21 12:21:02,259 - INFO - 文件 LC-20251118200001.xlsx: 总数据 14395 行，已处理 14019 行，新数据 376 行
+2025-11-21 12:21:02,697 - INFO - 状态更新完成：文件 LC-20251118200001.xlsx，新记录 14389 条，总记录数 15625 条
+2025-11-21 12:21:02,700 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:21:02,735 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:21:02,772 - INFO - 第一步CFN匹配后，还有 71 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:21:02,811 - INFO - 第二步Material Number匹配成功: 1 条记录
+2025-11-21 12:21:02,814 - INFO - 合并标准时间数据完成: 406 行
+2025-11-21 12:21:02,815 - INFO - 匹配到标准时间: 335 行
+2025-11-21 12:21:02,816 - INFO - 匹配到EH_machine(s): 335 行
+2025-11-21 12:21:02,817 - INFO - 匹配到EH_labor(s): 335 行
+2025-11-21 12:21:02,817 - INFO - 匹配到OEE: 406 行
+2025-11-21 12:21:02,818 - INFO - 匹配到Setup Time (h): 27 行
+2025-11-21 12:21:02,822 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 226 条，总计 406 条
+2025-11-21 12:21:02,834 - INFO - 计算 PreviousBatchEndTime 完成：总计 406 条，成功计算 219 条（其中有效machine记录 219 条）
+2025-11-21 12:21:02,943 - INFO - 加载历史SFC数据: 15249 行
+2025-11-21 12:21:02,973 - INFO - 数据合并完成：历史 15249 行 + 新增 406 行 = 合并后 15625 行
+2025-11-21 12:21:03,242 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 15625
+2025-11-21 12:21:10,634 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 15625
+2025-11-21 12:21:10,636 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251118200001.xlsx
+2025-11-21 12:21:10,636 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251117200001.xlsx
+2025-11-21 12:21:12,185 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251117200001.xlsx, 共 13868 行数据
+2025-11-21 12:21:12,679 - INFO - 文件 LC-20251117200001.xlsx: 总数据 13868 行，已处理 13801 行，新数据 67 行
+2025-11-21 12:21:12,921 - INFO - 状态更新完成：文件 LC-20251117200001.xlsx，新记录 13862 条，总记录数 15692 条
+2025-11-21 12:21:12,923 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:21:12,945 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:21:12,973 - INFO - 第一步CFN匹配后，还有 5 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:21:13,001 - INFO - 合并标准时间数据完成: 69 行
+2025-11-21 12:21:13,002 - INFO - 匹配到标准时间: 64 行
+2025-11-21 12:21:13,002 - INFO - 匹配到EH_machine(s): 64 行
+2025-11-21 12:21:13,003 - INFO - 匹配到EH_labor(s): 64 行
+2025-11-21 12:21:13,003 - INFO - 匹配到OEE: 69 行
+2025-11-21 12:21:13,004 - INFO - 匹配到Setup Time (h): 3 行
+2025-11-21 12:21:13,007 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 45 条，总计 69 条
+2025-11-21 12:21:13,012 - INFO - 计算 PreviousBatchEndTime 完成：总计 69 条，成功计算 42 条（其中有效machine记录 42 条）
+2025-11-21 12:21:13,052 - INFO - 加载历史SFC数据: 15625 行
+2025-11-21 12:21:13,075 - INFO - 数据合并完成：历史 15625 行 + 新增 69 行 = 合并后 15692 行
+2025-11-21 12:21:13,276 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 15692
+2025-11-21 12:21:20,935 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 15692
+2025-11-21 12:21:20,937 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251117200001.xlsx
+2025-11-21 12:21:20,937 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251116200001.xlsx
+2025-11-21 12:21:22,232 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251116200001.xlsx, 共 13671 行数据
+2025-11-21 12:21:23,355 - INFO - 文件 LC-20251116200001.xlsx: 总数据 13671 行，已处理 13429 行，新数据 242 行
+2025-11-21 12:21:23,576 - INFO - 状态更新完成：文件 LC-20251116200001.xlsx，新记录 13665 条，总记录数 15933 条
+2025-11-21 12:21:23,578 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:21:23,597 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:21:23,620 - INFO - 第一步CFN匹配后，还有 21 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:21:23,644 - INFO - 合并标准时间数据完成: 258 行
+2025-11-21 12:21:23,644 - INFO - 匹配到标准时间: 237 行
+2025-11-21 12:21:23,645 - INFO - 匹配到EH_machine(s): 237 行
+2025-11-21 12:21:23,646 - INFO - 匹配到EH_labor(s): 237 行
+2025-11-21 12:21:23,646 - INFO - 匹配到OEE: 258 行
+2025-11-21 12:21:23,647 - INFO - 匹配到Setup Time (h): 22 行
+2025-11-21 12:21:23,649 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 198 条，总计 258 条
+2025-11-21 12:21:23,655 - INFO - 计算 PreviousBatchEndTime 完成：总计 258 条，成功计算 189 条（其中有效machine记录 189 条）
+2025-11-21 12:21:23,747 - INFO - 加载历史SFC数据: 15692 行
+2025-11-21 12:21:23,776 - INFO - 数据合并完成：历史 15692 行 + 新增 258 行 = 合并后 15933 行
+2025-11-21 12:21:24,066 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 15933
+2025-11-21 12:21:30,584 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 15933
+2025-11-21 12:21:30,586 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251116200001.xlsx
+2025-11-21 12:21:30,586 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251115200001.xlsx
+2025-11-21 12:21:32,671 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251115200001.xlsx, 共 14034 行数据
+2025-11-21 12:21:33,809 - INFO - 文件 LC-20251115200001.xlsx: 总数据 14034 行，已处理 13451 行，新数据 583 行
+2025-11-21 12:21:34,049 - INFO - 状态更新完成：文件 LC-20251115200001.xlsx，新记录 14028 条，总记录数 16516 条
+2025-11-21 12:21:34,052 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:21:34,079 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:21:34,104 - INFO - 第一步CFN匹配后，还有 87 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:21:34,135 - INFO - 合并标准时间数据完成: 622 行
+2025-11-21 12:21:34,135 - INFO - 匹配到标准时间: 535 行
+2025-11-21 12:21:34,136 - INFO - 匹配到EH_machine(s): 535 行
+2025-11-21 12:21:34,137 - INFO - 匹配到EH_labor(s): 535 行
+2025-11-21 12:21:34,137 - INFO - 匹配到OEE: 622 行
+2025-11-21 12:21:34,137 - INFO - 匹配到Setup Time (h): 60 行
+2025-11-21 12:21:34,140 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 387 条，总计 622 条
+2025-11-21 12:21:34,149 - INFO - 计算 PreviousBatchEndTime 完成：总计 622 条，成功计算 378 条（其中有效machine记录 378 条）
+2025-11-21 12:21:34,366 - INFO - 加载历史SFC数据: 15933 行
+2025-11-21 12:21:34,390 - INFO - 数据合并完成：历史 15933 行 + 新增 622 行 = 合并后 16516 行
+2025-11-21 12:21:34,638 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 16516
+2025-11-21 12:21:41,797 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 16516
+2025-11-21 12:21:41,799 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251115200001.xlsx
+2025-11-21 12:21:41,799 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251114200001.xlsx
+2025-11-21 12:21:43,225 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251114200001.xlsx, 共 14063 行数据
+2025-11-21 12:21:43,628 - INFO - 文件 LC-20251114200001.xlsx: 总数据 14063 行，已处理 13499 行，新数据 564 行
+2025-11-21 12:21:43,855 - INFO - 状态更新完成：文件 LC-20251114200001.xlsx，新记录 14058 条，总记录数 17080 条
+2025-11-21 12:21:43,858 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:21:43,886 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:21:43,920 - INFO - 第一步CFN匹配后，还有 95 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:21:43,952 - INFO - 合并标准时间数据完成: 602 行
+2025-11-21 12:21:43,953 - INFO - 匹配到标准时间: 507 行
+2025-11-21 12:21:43,953 - INFO - 匹配到EH_machine(s): 507 行
+2025-11-21 12:21:43,954 - INFO - 匹配到EH_labor(s): 507 行
+2025-11-21 12:21:43,955 - INFO - 匹配到OEE: 602 行
+2025-11-21 12:21:43,955 - INFO - 匹配到Setup Time (h): 64 行
+2025-11-21 12:21:43,958 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 383 条，总计 602 条
+2025-11-21 12:21:43,964 - INFO - 计算 PreviousBatchEndTime 完成：总计 602 条，成功计算 369 条（其中有效machine记录 369 条）
+2025-11-21 12:21:44,122 - INFO - 加载历史SFC数据: 16516 行
+2025-11-21 12:21:44,170 - INFO - 数据合并完成：历史 16516 行 + 新增 602 行 = 合并后 17080 行
+2025-11-21 12:21:44,466 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 17080
+2025-11-21 12:21:51,458 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 17080
+2025-11-21 12:21:51,459 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251114200001.xlsx
+2025-11-21 12:21:51,460 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251113200001.xlsx
+2025-11-21 12:21:52,933 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251113200001.xlsx, 共 14012 行数据
+2025-11-21 12:21:53,348 - INFO - 文件 LC-20251113200001.xlsx: 总数据 14012 行，已处理 13441 行，新数据 571 行
+2025-11-21 12:21:53,548 - INFO - 状态更新完成：文件 LC-20251113200001.xlsx，新记录 14007 条，总记录数 17651 条
+2025-11-21 12:21:53,550 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:21:53,572 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:21:53,596 - INFO - 第一步CFN匹配后，还有 91 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:21:53,625 - INFO - 合并标准时间数据完成: 611 行
+2025-11-21 12:21:53,626 - INFO - 匹配到标准时间: 520 行
+2025-11-21 12:21:53,627 - INFO - 匹配到EH_machine(s): 520 行
+2025-11-21 12:21:53,627 - INFO - 匹配到EH_labor(s): 520 行
+2025-11-21 12:21:53,628 - INFO - 匹配到OEE: 611 行
+2025-11-21 12:21:53,628 - INFO - 匹配到Setup Time (h): 55 行
+2025-11-21 12:21:53,631 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 378 条，总计 611 条
+2025-11-21 12:21:53,637 - INFO - 计算 PreviousBatchEndTime 完成：总计 611 条，成功计算 368 条（其中有效machine记录 368 条）
+2025-11-21 12:21:53,740 - INFO - 加载历史SFC数据: 17080 行
+2025-11-21 12:21:53,766 - INFO - 数据合并完成：历史 17080 行 + 新增 611 行 = 合并后 17651 行
+2025-11-21 12:21:53,954 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 17651
+2025-11-21 12:22:04,402 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 17651
+2025-11-21 12:22:04,404 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251113200001.xlsx
+2025-11-21 12:22:04,404 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251112200001.xlsx
+2025-11-21 12:22:06,137 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251112200001.xlsx, 共 13924 行数据
+2025-11-21 12:22:07,462 - INFO - 文件 LC-20251112200001.xlsx: 总数据 13924 行，已处理 13359 行，新数据 565 行
+2025-11-21 12:22:07,711 - INFO - 状态更新完成：文件 LC-20251112200001.xlsx，新记录 13919 条，总记录数 18216 条
+2025-11-21 12:22:07,712 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:22:07,735 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:22:07,758 - INFO - 第一步CFN匹配后，还有 68 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:22:07,779 - INFO - 合并标准时间数据完成: 613 行
+2025-11-21 12:22:07,780 - INFO - 匹配到标准时间: 545 行
+2025-11-21 12:22:07,781 - INFO - 匹配到EH_machine(s): 545 行
+2025-11-21 12:22:07,781 - INFO - 匹配到EH_labor(s): 545 行
+2025-11-21 12:22:07,781 - INFO - 匹配到OEE: 613 行
+2025-11-21 12:22:07,782 - INFO - 匹配到Setup Time (h): 58 行
+2025-11-21 12:22:07,784 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 370 条，总计 613 条
+2025-11-21 12:22:07,792 - INFO - 计算 PreviousBatchEndTime 完成：总计 613 条，成功计算 360 条（其中有效machine记录 360 条）
+2025-11-21 12:22:07,904 - INFO - 加载历史SFC数据: 17651 行
+2025-11-21 12:22:07,931 - INFO - 数据合并完成：历史 17651 行 + 新增 613 行 = 合并后 18216 行
+2025-11-21 12:22:08,190 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 18216
+2025-11-21 12:22:15,963 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 18216
+2025-11-21 12:22:15,964 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251112200001.xlsx
+2025-11-21 12:22:15,965 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251111200001.xlsx
+2025-11-21 12:22:17,437 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251111200001.xlsx, 共 13657 行数据
+2025-11-21 12:22:18,694 - INFO - 文件 LC-20251111200001.xlsx: 总数据 13657 行，已处理 13296 行，新数据 361 行
+2025-11-21 12:22:18,911 - INFO - 状态更新完成：文件 LC-20251111200001.xlsx，新记录 13652 条，总记录数 18577 条
+2025-11-21 12:22:18,915 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:22:18,942 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:22:18,974 - INFO - 第一步CFN匹配后，还有 59 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:22:19,014 - INFO - 合并标准时间数据完成: 395 行
+2025-11-21 12:22:19,014 - INFO - 匹配到标准时间: 336 行
+2025-11-21 12:22:19,015 - INFO - 匹配到EH_machine(s): 336 行
+2025-11-21 12:22:19,015 - INFO - 匹配到EH_labor(s): 336 行
+2025-11-21 12:22:19,016 - INFO - 匹配到OEE: 395 行
+2025-11-21 12:22:19,017 - INFO - 匹配到Setup Time (h): 38 行
+2025-11-21 12:22:19,021 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 220 条，总计 395 条
+2025-11-21 12:22:19,026 - INFO - 计算 PreviousBatchEndTime 完成：总计 395 条，成功计算 211 条（其中有效machine记录 211 条）
+2025-11-21 12:22:19,155 - INFO - 加载历史SFC数据: 18216 行
+2025-11-21 12:22:19,183 - INFO - 数据合并完成：历史 18216 行 + 新增 395 行 = 合并后 18577 行
+2025-11-21 12:22:19,399 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 18577
+2025-11-21 12:22:26,878 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 18577
+2025-11-21 12:22:26,879 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251111200001.xlsx
+2025-11-21 12:22:26,880 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251110200001.xlsx
+2025-11-21 12:22:28,653 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251110200001.xlsx, 共 13254 行数据
+2025-11-21 12:22:29,757 - INFO - 文件 LC-20251110200001.xlsx: 总数据 13254 行，已处理 13031 行，新数据 223 行
+2025-11-21 12:22:29,963 - INFO - 状态更新完成：文件 LC-20251110200001.xlsx，新记录 13250 条，总记录数 18800 条
+2025-11-21 12:22:29,965 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:22:29,987 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:22:30,018 - INFO - 第一步CFN匹配后，还有 16 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:22:30,047 - INFO - 合并标准时间数据完成: 241 行
+2025-11-21 12:22:30,048 - INFO - 匹配到标准时间: 225 行
+2025-11-21 12:22:30,048 - INFO - 匹配到EH_machine(s): 225 行
+2025-11-21 12:22:30,049 - INFO - 匹配到EH_labor(s): 225 行
+2025-11-21 12:22:30,049 - INFO - 匹配到OEE: 241 行
+2025-11-21 12:22:30,050 - INFO - 匹配到Setup Time (h): 24 行
+2025-11-21 12:22:30,052 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 189 条，总计 241 条
+2025-11-21 12:22:30,058 - INFO - 计算 PreviousBatchEndTime 完成：总计 241 条，成功计算 180 条（其中有效machine记录 180 条）
+2025-11-21 12:22:30,138 - INFO - 加载历史SFC数据: 18577 行
+2025-11-21 12:22:30,163 - INFO - 数据合并完成：历史 18577 行 + 新增 241 行 = 合并后 18800 行
+2025-11-21 12:22:30,373 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 18800
+2025-11-21 12:22:42,757 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 18800
+2025-11-21 12:22:42,759 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251110200001.xlsx
+2025-11-21 12:22:42,759 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251109200001.xlsx
+2025-11-21 12:22:44,619 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251109200001.xlsx, 共 13400 行数据
+2025-11-21 12:22:46,058 - INFO - 文件 LC-20251109200001.xlsx: 总数据 13400 行，已处理 12772 行，新数据 628 行
+2025-11-21 12:22:46,318 - INFO - 状态更新完成：文件 LC-20251109200001.xlsx，新记录 13396 条，总记录数 19428 条
+2025-11-21 12:22:46,320 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:22:46,343 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:22:46,372 - INFO - 第一步CFN匹配后，还有 88 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:22:46,398 - INFO - 合并标准时间数据完成: 669 行
+2025-11-21 12:22:46,398 - INFO - 匹配到标准时间: 581 行
+2025-11-21 12:22:46,399 - INFO - 匹配到EH_machine(s): 581 行
+2025-11-21 12:22:46,399 - INFO - 匹配到EH_labor(s): 581 行
+2025-11-21 12:22:46,400 - INFO - 匹配到OEE: 669 行
+2025-11-21 12:22:46,400 - INFO - 匹配到Setup Time (h): 57 行
+2025-11-21 12:22:46,403 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 416 条，总计 669 条
+2025-11-21 12:22:46,409 - INFO - 计算 PreviousBatchEndTime 完成：总计 669 条，成功计算 402 条（其中有效machine记录 402 条）
+2025-11-21 12:22:46,558 - INFO - 加载历史SFC数据: 18800 行
+2025-11-21 12:22:46,589 - INFO - 数据合并完成：历史 18800 行 + 新增 669 行 = 合并后 19428 行
+2025-11-21 12:22:46,851 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 19428
+2025-11-21 12:22:55,745 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 19428
+2025-11-21 12:22:55,748 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251109200001.xlsx
+2025-11-21 12:22:55,749 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251108200001.xlsx
+2025-11-21 12:22:58,965 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251108200001.xlsx, 共 13926 行数据
+2025-11-21 12:23:00,105 - INFO - 文件 LC-20251108200001.xlsx: 总数据 13926 行，已处理 13288 行，新数据 638 行
+2025-11-21 12:23:00,370 - INFO - 状态更新完成：文件 LC-20251108200001.xlsx，新记录 13922 条，总记录数 20066 条
+2025-11-21 12:23:00,372 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:23:00,403 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:23:00,436 - INFO - 第一步CFN匹配后，还有 88 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:23:00,468 - INFO - 合并标准时间数据完成: 677 行
+2025-11-21 12:23:00,469 - INFO - 匹配到标准时间: 589 行
+2025-11-21 12:23:00,469 - INFO - 匹配到EH_machine(s): 589 行
+2025-11-21 12:23:00,470 - INFO - 匹配到EH_labor(s): 589 行
+2025-11-21 12:23:00,470 - INFO - 匹配到OEE: 677 行
+2025-11-21 12:23:00,471 - INFO - 匹配到Setup Time (h): 46 行
+2025-11-21 12:23:00,475 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 436 条，总计 677 条
+2025-11-21 12:23:00,484 - INFO - 计算 PreviousBatchEndTime 完成：总计 677 条，成功计算 428 条（其中有效machine记录 428 条）
+2025-11-21 12:23:00,668 - INFO - 加载历史SFC数据: 19428 行
+2025-11-21 12:23:00,706 - INFO - 数据合并完成：历史 19428 行 + 新增 677 行 = 合并后 20066 行
+2025-11-21 12:23:01,004 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 20066
+2025-11-21 12:23:11,687 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 20066
+2025-11-21 12:23:11,688 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251108200001.xlsx
+2025-11-21 12:23:11,689 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251107200001.xlsx
+2025-11-21 12:23:14,957 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251107200001.xlsx, 共 14006 行数据
+2025-11-21 12:23:15,638 - INFO - 文件 LC-20251107200001.xlsx: 总数据 14006 行，已处理 13621 行，新数据 385 行
+2025-11-21 12:23:15,998 - INFO - 状态更新完成：文件 LC-20251107200001.xlsx，新记录 14002 条，总记录数 20451 条
+2025-11-21 12:23:16,000 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:23:16,031 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:23:16,063 - INFO - 第一步CFN匹配后，还有 58 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:23:16,094 - INFO - 合并标准时间数据完成: 416 行
+2025-11-21 12:23:16,094 - INFO - 匹配到标准时间: 358 行
+2025-11-21 12:23:16,095 - INFO - 匹配到EH_machine(s): 358 行
+2025-11-21 12:23:16,096 - INFO - 匹配到EH_labor(s): 358 行
+2025-11-21 12:23:16,096 - INFO - 匹配到OEE: 416 行
+2025-11-21 12:23:16,097 - INFO - 匹配到Setup Time (h): 23 行
+2025-11-21 12:23:16,100 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 208 条，总计 416 条
+2025-11-21 12:23:16,106 - INFO - 计算 PreviousBatchEndTime 完成：总计 416 条，成功计算 197 条（其中有效machine记录 197 条）
+2025-11-21 12:23:16,235 - INFO - 加载历史SFC数据: 20066 行
+2025-11-21 12:23:16,268 - INFO - 数据合并完成：历史 20066 行 + 新增 416 行 = 合并后 20451 行
+2025-11-21 12:23:16,590 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 20451
+2025-11-21 12:23:27,966 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 20451
+2025-11-21 12:23:27,968 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251107200001.xlsx
+2025-11-21 12:23:27,968 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251102200001.xlsx
+2025-11-21 12:23:29,175 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251102200001.xlsx, 共 11054 行数据
+2025-11-21 12:23:30,181 - INFO - 文件 LC-20251102200001.xlsx: 总数据 11054 行，已处理 11020 行，新数据 34 行
+2025-11-21 12:23:30,657 - INFO - 状态更新完成：文件 LC-20251102200001.xlsx，新记录 11051 条，总记录数 20485 条
+2025-11-21 12:23:30,662 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 12:23:30,713 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 12:23:30,783 - INFO - 第一步CFN匹配后，还有 3 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 12:23:30,851 - INFO - 合并标准时间数据完成: 34 行
+2025-11-21 12:23:30,852 - INFO - 匹配到标准时间: 31 行
+2025-11-21 12:23:30,854 - INFO - 匹配到EH_machine(s): 31 行
+2025-11-21 12:23:30,855 - INFO - 匹配到EH_labor(s): 31 行
+2025-11-21 12:23:30,856 - INFO - 匹配到OEE: 34 行
+2025-11-21 12:23:30,859 - INFO - 匹配到Setup Time (h): 0 行
+2025-11-21 12:23:30,866 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 25 条，总计 34 条
+2025-11-21 12:23:30,885 - INFO - 计算 PreviousBatchEndTime 完成：总计 34 条，成功计算 25 条（其中有效machine记录 25 条）
+2025-11-21 12:23:30,960 - INFO - 加载历史SFC数据: 20451 行
+2025-11-21 12:23:31,018 - INFO - 数据合并完成：历史 20451 行 + 新增 34 行 = 合并后 20485 行
+2025-11-21 12:23:31,502 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 20485
+2025-11-21 12:23:42,398 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 20485
+2025-11-21 12:23:42,399 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251102200001.xlsx
+2025-11-21 12:23:42,400 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251106200001.xlsx
+2025-11-21 12:23:43,822 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251106200001.xlsx, 共 13422 行数据
+2025-11-21 12:23:44,365 - INFO - 文件 LC-20251106200001.xlsx: 总数据 13422 行，已处理 13422 行，新数据 0 行
+2025-11-21 12:23:44,630 - INFO - 状态更新完成：文件 LC-20251106200001.xlsx，新记录 13418 条，总记录数 20485 条
+2025-11-21 12:23:44,631 - INFO - 文件无新数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251106200001.xlsx
+2025-11-21 12:23:44,633 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251105200001.xlsx
+2025-11-21 12:23:46,024 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251105200001.xlsx, 共 12777 行数据
+2025-11-21 12:23:47,102 - INFO - 文件 LC-20251105200001.xlsx: 总数据 12777 行，已处理 12777 行，新数据 0 行
+2025-11-21 12:23:47,363 - INFO - 状态更新完成：文件 LC-20251105200001.xlsx，新记录 12774 条，总记录数 20485 条
+2025-11-21 12:23:47,365 - INFO - 文件无新数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251105200001.xlsx
+2025-11-21 12:23:47,365 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251103200001.xlsx
+2025-11-21 12:23:48,922 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251103200001.xlsx, 共 11505 行数据
+2025-11-21 12:23:49,804 - INFO - 文件 LC-20251103200001.xlsx: 总数据 11505 行，已处理 11505 行，新数据 0 行
+2025-11-21 12:23:50,056 - INFO - 状态更新完成：文件 LC-20251103200001.xlsx，新记录 11502 条，总记录数 20485 条
+2025-11-21 12:23:50,057 - INFO - 文件无新数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251103200001.xlsx
+2025-11-21 12:23:50,058 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251104200001.xlsx
+2025-11-21 12:23:51,830 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251104200001.xlsx, 共 12142 行数据
+2025-11-21 12:23:52,800 - INFO - 文件 LC-20251104200001.xlsx: 总数据 12142 行，已处理 12142 行，新数据 0 行
+2025-11-21 12:23:53,016 - INFO - 状态更新完成：文件 LC-20251104200001.xlsx，新记录 12139 条，总记录数 20485 条
+2025-11-21 12:23:53,018 - INFO - 文件无新数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251104200001.xlsx
+2025-11-21 12:23:53,019 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251101200001.xlsx
+2025-11-21 12:23:54,404 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251101200001.xlsx, 共 10958 行数据
+2025-11-21 12:23:54,737 - INFO - 文件 LC-20251101200001.xlsx: 总数据 10958 行，已处理 10958 行，新数据 0 行
+2025-11-21 12:23:54,944 - INFO - 状态更新完成：文件 LC-20251101200001.xlsx，新记录 10955 条，总记录数 20485 条
+2025-11-21 12:23:54,946 - INFO - 文件无新数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251101200001.xlsx
+2025-11-21 12:23:54,946 - INFO - 所有文件处理完成，最终数据行数: 20485
+2025-11-21 12:23:54,948 - INFO - 对所有合并后的数据统一计算 PreviousBatchEndTime
+2025-11-21 12:23:54,958 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 12646 条，总计 20485 条
+2025-11-21 12:23:55,016 - INFO - 计算 PreviousBatchEndTime 完成：总计 20485 条，成功计算 12632 条（其中有效machine记录 12632 条）
+2025-11-21 12:23:55,018 - INFO - 增量处理：状态已更新
+2025-11-21 12:23:55,247 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 20485
+2025-11-21 12:24:05,433 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 20485
+2025-11-21 12:24:05,435 - INFO - SFC数据已保存: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet
+2025-11-21 12:24:05,435 - INFO - 处理完成，耗时: 216.81秒
+2025-11-21 13:11:49,754 - INFO - ============================================================
+2025-11-21 13:11:49,756 - INFO - 用户选择: 全量刷新
+2025-11-21 13:11:49,757 - INFO - ============================================================
+2025-11-21 13:11:49,757 - INFO - 执行全量刷新：清除状态文件和历史数据文件
+2025-11-21 13:11:49,761 - INFO - 已删除状态文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\etl_sfc_state.json
+2025-11-21 13:11:49,768 - INFO - 已删除历史数据文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet
+2025-11-21 13:11:49,910 - INFO - 测试模式：只处理最近 20 个SFC文件（共找到 479 个）
+2025-11-21 13:11:49,911 - INFO - 找到 20 个SFC文件（将处理）
+2025-11-21 13:11:49,914 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251120200001.xlsx
+2025-11-21 13:11:52,775 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251120200001.xlsx, 共 14691 行数据
+2025-11-21 13:11:54,064 - INFO - 文件 LC-20251120200001.xlsx: 总数据 14691 行，已处理 0 行，新数据 14691 行
+2025-11-21 13:11:54,314 - INFO - 状态更新完成：文件 LC-20251120200001.xlsx，新记录 14684 条，总记录数 14684 条
+2025-11-21 13:11:54,316 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:11:54,663 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:11:54,782 - INFO - 第一步CFN匹配后，还有 2139 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:11:54,872 - INFO - 第二步Material Number匹配成功: 151 条记录
+2025-11-21 13:11:54,875 - INFO - 合并标准时间数据完成: 15971 行
+2025-11-21 13:11:54,876 - INFO - 匹配到标准时间: 13852 行
+2025-11-21 13:11:54,877 - INFO - 匹配到EH_machine(s): 13852 行
+2025-11-21 13:11:54,879 - INFO - 匹配到EH_labor(s): 13852 行
+2025-11-21 13:11:54,881 - INFO - 匹配到OEE: 15971 行
+2025-11-21 13:11:54,883 - INFO - 匹配到Setup Time (h): 1515 行
+2025-11-21 13:11:54,904 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 10239 条，总计 15971 条
+2025-11-21 13:11:55,104 - INFO - 计算 PreviousBatchEndTime 完成：总计 15971 条，成功计算 10224 条（其中有效machine记录 10224 条）
+2025-11-21 13:11:57,716 - INFO - 历史数据文件不存在，直接使用新数据
+2025-11-21 13:11:57,948 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 15971
+2025-11-21 13:12:08,153 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 15971
+2025-11-21 13:12:08,155 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251120200001.xlsx
+2025-11-21 13:12:08,158 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251119200001.xlsx
+2025-11-21 13:12:11,200 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251119200001.xlsx, 共 14649 行数据
+2025-11-21 13:12:13,992 - INFO - 文件 LC-20251119200001.xlsx: 总数据 14649 行，已处理 14084 行，新数据 565 行
+2025-11-21 13:12:14,573 - INFO - 状态更新完成：文件 LC-20251119200001.xlsx，新记录 14643 条，总记录数 15249 条
+2025-11-21 13:12:14,578 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:12:14,638 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:12:14,690 - INFO - 第一步CFN匹配后，还有 96 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:12:14,778 - INFO - 第二步Material Number匹配成功: 4 条记录
+2025-11-21 13:12:14,781 - INFO - 合并标准时间数据完成: 613 行
+2025-11-21 13:12:14,782 - INFO - 匹配到标准时间: 517 行
+2025-11-21 13:12:14,784 - INFO - 匹配到EH_machine(s): 517 行
+2025-11-21 13:12:14,785 - INFO - 匹配到EH_labor(s): 517 行
+2025-11-21 13:12:14,786 - INFO - 匹配到OEE: 613 行
+2025-11-21 13:12:14,788 - INFO - 匹配到Setup Time (h): 40 行
+2025-11-21 13:12:14,799 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 377 条，总计 613 条
+2025-11-21 13:12:14,851 - INFO - 计算 PreviousBatchEndTime 完成：总计 613 条，成功计算 364 条（其中有效machine记录 364 条）
+2025-11-21 13:12:15,129 - INFO - 加载历史SFC数据: 15971 行
+2025-11-21 13:12:15,230 - INFO - 数据合并完成：历史 15971 行 + 新增 613 行 = 合并后 15249 行
+2025-11-21 13:12:15,540 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 15249
+2025-11-21 13:12:33,718 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 15249
+2025-11-21 13:12:33,720 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251119200001.xlsx
+2025-11-21 13:12:33,720 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251118200001.xlsx
+2025-11-21 13:12:37,632 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251118200001.xlsx, 共 14395 行数据
+2025-11-21 13:12:38,652 - INFO - 文件 LC-20251118200001.xlsx: 总数据 14395 行，已处理 14019 行，新数据 376 行
+2025-11-21 13:12:39,312 - INFO - 状态更新完成：文件 LC-20251118200001.xlsx，新记录 14389 条，总记录数 15625 条
+2025-11-21 13:12:39,315 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:12:39,360 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:12:39,422 - INFO - 第一步CFN匹配后，还有 71 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:12:39,481 - INFO - 第二步Material Number匹配成功: 1 条记录
+2025-11-21 13:12:39,483 - INFO - 合并标准时间数据完成: 406 行
+2025-11-21 13:12:39,485 - INFO - 匹配到标准时间: 335 行
+2025-11-21 13:12:39,485 - INFO - 匹配到EH_machine(s): 335 行
+2025-11-21 13:12:39,486 - INFO - 匹配到EH_labor(s): 335 行
+2025-11-21 13:12:39,487 - INFO - 匹配到OEE: 406 行
+2025-11-21 13:12:39,488 - INFO - 匹配到Setup Time (h): 27 行
+2025-11-21 13:12:39,494 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 226 条，总计 406 条
+2025-11-21 13:12:39,508 - INFO - 计算 PreviousBatchEndTime 完成：总计 406 条，成功计算 219 条（其中有效machine记录 219 条）
+2025-11-21 13:12:39,837 - INFO - 加载历史SFC数据: 15249 行
+2025-11-21 13:12:39,882 - INFO - 数据合并完成：历史 15249 行 + 新增 406 行 = 合并后 15625 行
+2025-11-21 13:12:40,219 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 15625
+2025-11-21 13:12:52,397 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 15625
+2025-11-21 13:12:52,400 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251118200001.xlsx
+2025-11-21 13:12:52,401 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251117200001.xlsx
+2025-11-21 13:12:55,475 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251117200001.xlsx, 共 13868 行数据
+2025-11-21 13:12:56,554 - INFO - 文件 LC-20251117200001.xlsx: 总数据 13868 行，已处理 13801 行，新数据 67 行
+2025-11-21 13:12:57,472 - INFO - 状态更新完成：文件 LC-20251117200001.xlsx，新记录 13862 条，总记录数 15692 条
+2025-11-21 13:12:57,474 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:12:57,518 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:12:57,565 - INFO - 第一步CFN匹配后，还有 5 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:12:57,614 - INFO - 合并标准时间数据完成: 69 行
+2025-11-21 13:12:57,615 - INFO - 匹配到标准时间: 64 行
+2025-11-21 13:12:57,615 - INFO - 匹配到EH_machine(s): 64 行
+2025-11-21 13:12:57,616 - INFO - 匹配到EH_labor(s): 64 行
+2025-11-21 13:12:57,617 - INFO - 匹配到OEE: 69 行
+2025-11-21 13:12:57,617 - INFO - 匹配到Setup Time (h): 3 行
+2025-11-21 13:12:57,621 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 45 条，总计 69 条
+2025-11-21 13:12:57,630 - INFO - 计算 PreviousBatchEndTime 完成：总计 69 条，成功计算 42 条（其中有效machine记录 42 条）
+2025-11-21 13:12:57,708 - INFO - 加载历史SFC数据: 15625 行
+2025-11-21 13:12:57,758 - INFO - 数据合并完成：历史 15625 行 + 新增 69 行 = 合并后 15692 行
+2025-11-21 13:12:58,333 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 15692
+2025-11-21 13:13:13,558 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 15692
+2025-11-21 13:13:13,560 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251117200001.xlsx
+2025-11-21 13:13:13,560 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251116200001.xlsx
+2025-11-21 13:13:16,672 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251116200001.xlsx, 共 13671 行数据
+2025-11-21 13:13:19,231 - INFO - 文件 LC-20251116200001.xlsx: 总数据 13671 行，已处理 13429 行，新数据 242 行
+2025-11-21 13:13:19,770 - INFO - 状态更新完成：文件 LC-20251116200001.xlsx，新记录 13665 条，总记录数 15933 条
+2025-11-21 13:13:19,773 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:13:19,807 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:13:19,854 - INFO - 第一步CFN匹配后，还有 21 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:13:19,904 - INFO - 合并标准时间数据完成: 258 行
+2025-11-21 13:13:19,905 - INFO - 匹配到标准时间: 237 行
+2025-11-21 13:13:19,906 - INFO - 匹配到EH_machine(s): 237 行
+2025-11-21 13:13:19,906 - INFO - 匹配到EH_labor(s): 237 行
+2025-11-21 13:13:19,907 - INFO - 匹配到OEE: 258 行
+2025-11-21 13:13:19,908 - INFO - 匹配到Setup Time (h): 22 行
+2025-11-21 13:13:19,912 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 198 条，总计 258 条
+2025-11-21 13:13:19,920 - INFO - 计算 PreviousBatchEndTime 完成：总计 258 条，成功计算 189 条（其中有效machine记录 189 条）
+2025-11-21 13:13:20,071 - INFO - 加载历史SFC数据: 15692 行
+2025-11-21 13:13:20,112 - INFO - 数据合并完成：历史 15692 行 + 新增 258 行 = 合并后 15933 行
+2025-11-21 13:13:20,425 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 15933
+2025-11-21 13:13:37,631 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 15933
+2025-11-21 13:13:37,634 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251116200001.xlsx
+2025-11-21 13:13:37,634 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251115200001.xlsx
+2025-11-21 13:13:41,068 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251115200001.xlsx, 共 14034 行数据
+2025-11-21 13:13:43,662 - INFO - 文件 LC-20251115200001.xlsx: 总数据 14034 行，已处理 13451 行，新数据 583 行
+2025-11-21 13:13:44,318 - INFO - 状态更新完成：文件 LC-20251115200001.xlsx，新记录 14028 条，总记录数 16516 条
+2025-11-21 13:13:44,322 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:13:44,357 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:13:44,436 - INFO - 第一步CFN匹配后，还有 87 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:13:44,509 - INFO - 合并标准时间数据完成: 622 行
+2025-11-21 13:13:44,510 - INFO - 匹配到标准时间: 535 行
+2025-11-21 13:13:44,511 - INFO - 匹配到EH_machine(s): 535 行
+2025-11-21 13:13:44,512 - INFO - 匹配到EH_labor(s): 535 行
+2025-11-21 13:13:44,513 - INFO - 匹配到OEE: 622 行
+2025-11-21 13:13:44,533 - INFO - 匹配到Setup Time (h): 60 行
+2025-11-21 13:13:44,538 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 387 条，总计 622 条
+2025-11-21 13:13:44,551 - INFO - 计算 PreviousBatchEndTime 完成：总计 622 条，成功计算 378 条（其中有效machine记录 378 条）
+2025-11-21 13:13:44,823 - INFO - 加载历史SFC数据: 15933 行
+2025-11-21 13:13:44,873 - INFO - 数据合并完成：历史 15933 行 + 新增 622 行 = 合并后 16516 行
+2025-11-21 13:13:45,274 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 16516
+2025-11-21 13:14:00,505 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 16516
+2025-11-21 13:14:00,508 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251115200001.xlsx
+2025-11-21 13:14:00,509 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251114200001.xlsx
+2025-11-21 13:14:04,988 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251114200001.xlsx, 共 14063 行数据
+2025-11-21 13:14:06,178 - INFO - 文件 LC-20251114200001.xlsx: 总数据 14063 行，已处理 13499 行，新数据 564 行
+2025-11-21 13:14:06,741 - INFO - 状态更新完成：文件 LC-20251114200001.xlsx，新记录 14058 条，总记录数 17080 条
+2025-11-21 13:14:06,744 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:14:06,783 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:14:06,827 - INFO - 第一步CFN匹配后，还有 95 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:14:06,871 - INFO - 合并标准时间数据完成: 602 行
+2025-11-21 13:14:06,872 - INFO - 匹配到标准时间: 507 行
+2025-11-21 13:14:06,872 - INFO - 匹配到EH_machine(s): 507 行
+2025-11-21 13:14:06,873 - INFO - 匹配到EH_labor(s): 507 行
+2025-11-21 13:14:06,873 - INFO - 匹配到OEE: 602 行
+2025-11-21 13:14:06,874 - INFO - 匹配到Setup Time (h): 64 行
+2025-11-21 13:14:06,880 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 383 条，总计 602 条
+2025-11-21 13:14:06,891 - INFO - 计算 PreviousBatchEndTime 完成：总计 602 条，成功计算 369 条（其中有效machine记录 369 条）
+2025-11-21 13:14:07,173 - INFO - 加载历史SFC数据: 16516 行
+2025-11-21 13:14:07,229 - INFO - 数据合并完成：历史 16516 行 + 新增 602 行 = 合并后 17080 行
+2025-11-21 13:14:07,671 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 17080
+2025-11-21 13:14:27,207 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 17080
+2025-11-21 13:14:27,209 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251114200001.xlsx
+2025-11-21 13:14:27,210 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251113200001.xlsx
+2025-11-21 13:14:30,293 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251113200001.xlsx, 共 14012 行数据
+2025-11-21 13:14:31,270 - INFO - 文件 LC-20251113200001.xlsx: 总数据 14012 行，已处理 13441 行，新数据 571 行
+2025-11-21 13:14:31,844 - INFO - 状态更新完成：文件 LC-20251113200001.xlsx，新记录 14007 条，总记录数 17651 条
+2025-11-21 13:14:31,848 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:14:31,905 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:14:31,997 - INFO - 第一步CFN匹配后，还有 91 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:14:32,082 - INFO - 合并标准时间数据完成: 611 行
+2025-11-21 13:14:32,082 - INFO - 匹配到标准时间: 520 行
+2025-11-21 13:14:32,084 - INFO - 匹配到EH_machine(s): 520 行
+2025-11-21 13:14:32,085 - INFO - 匹配到EH_labor(s): 520 行
+2025-11-21 13:14:32,086 - INFO - 匹配到OEE: 611 行
+2025-11-21 13:14:32,087 - INFO - 匹配到Setup Time (h): 55 行
+2025-11-21 13:14:32,094 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 378 条，总计 611 条
+2025-11-21 13:14:32,113 - INFO - 计算 PreviousBatchEndTime 完成：总计 611 条，成功计算 368 条（其中有效machine记录 368 条）
+2025-11-21 13:14:32,618 - INFO - 加载历史SFC数据: 17080 行
+2025-11-21 13:14:32,658 - INFO - 数据合并完成：历史 17080 行 + 新增 611 行 = 合并后 17651 行
+2025-11-21 13:14:33,004 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 17651
+2025-11-21 13:14:51,012 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 17651
+2025-11-21 13:14:51,016 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251113200001.xlsx
+2025-11-21 13:14:51,017 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251112200001.xlsx
+2025-11-21 13:14:53,265 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251112200001.xlsx, 共 13924 行数据
+2025-11-21 13:14:55,659 - INFO - 文件 LC-20251112200001.xlsx: 总数据 13924 行，已处理 13359 行，新数据 565 行
+2025-11-21 13:14:56,619 - INFO - 状态更新完成：文件 LC-20251112200001.xlsx，新记录 13919 条，总记录数 18216 条
+2025-11-21 13:14:56,623 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:14:56,671 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:14:56,731 - INFO - 第一步CFN匹配后，还有 68 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:14:56,803 - INFO - 合并标准时间数据完成: 613 行
+2025-11-21 13:14:56,803 - INFO - 匹配到标准时间: 545 行
+2025-11-21 13:14:56,805 - INFO - 匹配到EH_machine(s): 545 行
+2025-11-21 13:14:56,806 - INFO - 匹配到EH_labor(s): 545 行
+2025-11-21 13:14:56,807 - INFO - 匹配到OEE: 613 行
+2025-11-21 13:14:56,808 - INFO - 匹配到Setup Time (h): 58 行
+2025-11-21 13:14:56,814 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 370 条，总计 613 条
+2025-11-21 13:14:56,837 - INFO - 计算 PreviousBatchEndTime 完成：总计 613 条，成功计算 360 条（其中有效machine记录 360 条）
+2025-11-21 13:14:57,515 - INFO - 加载历史SFC数据: 17651 行
+2025-11-21 13:14:57,659 - INFO - 数据合并完成：历史 17651 行 + 新增 613 行 = 合并后 18216 行
+2025-11-21 13:14:58,488 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 18216
+2025-11-21 13:15:18,891 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 18216
+2025-11-21 13:15:18,894 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251112200001.xlsx
+2025-11-21 13:15:18,894 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251111200001.xlsx
+2025-11-21 13:15:21,188 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251111200001.xlsx, 共 13657 行数据
+2025-11-21 13:15:24,436 - INFO - 文件 LC-20251111200001.xlsx: 总数据 13657 行，已处理 13296 行，新数据 361 行
+2025-11-21 13:15:25,673 - INFO - 状态更新完成：文件 LC-20251111200001.xlsx，新记录 13652 条，总记录数 18577 条
+2025-11-21 13:15:25,680 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:15:25,749 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:15:25,827 - INFO - 第一步CFN匹配后，还有 59 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:15:25,907 - INFO - 合并标准时间数据完成: 395 行
+2025-11-21 13:15:25,908 - INFO - 匹配到标准时间: 336 行
+2025-11-21 13:15:25,908 - INFO - 匹配到EH_machine(s): 336 行
+2025-11-21 13:15:25,910 - INFO - 匹配到EH_labor(s): 336 行
+2025-11-21 13:15:25,911 - INFO - 匹配到OEE: 395 行
+2025-11-21 13:15:25,914 - INFO - 匹配到Setup Time (h): 38 行
+2025-11-21 13:15:25,922 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 220 条，总计 395 条
+2025-11-21 13:15:25,943 - INFO - 计算 PreviousBatchEndTime 完成：总计 395 条，成功计算 211 条（其中有效machine记录 211 条）
+2025-11-21 13:15:26,299 - INFO - 加载历史SFC数据: 18216 行
+2025-11-21 13:15:26,385 - INFO - 数据合并完成：历史 18216 行 + 新增 395 行 = 合并后 18577 行
+2025-11-21 13:15:26,918 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 18577
+2025-11-21 13:15:26,933 - WARNING - 保存Excel文件失败: [Errno 13] Permission denied: 'C:\\Users\\huangk14\\OneDrive - Medtronic PLC\\CZ Production - 文档\\General\\POWER BI 数据源 V2\\30-MES导出数据\\publish\\excel\\SFC_batch_report_latest.xlsx'
+2025-11-21 13:15:26,936 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251111200001.xlsx
+2025-11-21 13:15:26,938 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251110200001.xlsx
+2025-11-21 13:15:33,340 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251110200001.xlsx, 共 13254 行数据
+2025-11-21 13:15:37,624 - INFO - 文件 LC-20251110200001.xlsx: 总数据 13254 行，已处理 13031 行，新数据 223 行
+2025-11-21 13:15:38,125 - INFO - 状态更新完成：文件 LC-20251110200001.xlsx，新记录 13250 条，总记录数 18800 条
+2025-11-21 13:15:38,127 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:15:38,156 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:15:38,197 - INFO - 第一步CFN匹配后，还有 16 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:15:38,236 - INFO - 合并标准时间数据完成: 241 行
+2025-11-21 13:15:38,237 - INFO - 匹配到标准时间: 225 行
+2025-11-21 13:15:38,238 - INFO - 匹配到EH_machine(s): 225 行
+2025-11-21 13:15:38,238 - INFO - 匹配到EH_labor(s): 225 行
+2025-11-21 13:15:38,239 - INFO - 匹配到OEE: 241 行
+2025-11-21 13:15:38,239 - INFO - 匹配到Setup Time (h): 24 行
+2025-11-21 13:15:38,243 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 189 条，总计 241 条
+2025-11-21 13:15:38,251 - INFO - 计算 PreviousBatchEndTime 完成：总计 241 条，成功计算 180 条（其中有效machine记录 180 条）
+2025-11-21 13:15:38,399 - INFO - 加载历史SFC数据: 18577 行
+2025-11-21 13:15:38,476 - INFO - 数据合并完成：历史 18577 行 + 新增 241 行 = 合并后 18800 行
+2025-11-21 13:15:38,949 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 18800
+2025-11-21 13:15:55,870 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 18800
+2025-11-21 13:15:55,872 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251110200001.xlsx
+2025-11-21 13:15:55,873 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251109200001.xlsx
+2025-11-21 13:15:58,460 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251109200001.xlsx, 共 13400 行数据
+2025-11-21 13:16:04,440 - INFO - 文件 LC-20251109200001.xlsx: 总数据 13400 行，已处理 12772 行，新数据 628 行
+2025-11-21 13:16:06,085 - INFO - 状态更新完成：文件 LC-20251109200001.xlsx，新记录 13396 条，总记录数 19428 条
+2025-11-21 13:16:06,090 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:16:06,150 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:16:06,225 - INFO - 第一步CFN匹配后，还有 88 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:16:06,288 - INFO - 合并标准时间数据完成: 669 行
+2025-11-21 13:16:06,288 - INFO - 匹配到标准时间: 581 行
+2025-11-21 13:16:06,289 - INFO - 匹配到EH_machine(s): 581 行
+2025-11-21 13:16:06,290 - INFO - 匹配到EH_labor(s): 581 行
+2025-11-21 13:16:06,291 - INFO - 匹配到OEE: 669 行
+2025-11-21 13:16:06,292 - INFO - 匹配到Setup Time (h): 57 行
+2025-11-21 13:16:06,298 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 416 条，总计 669 条
+2025-11-21 13:16:06,318 - INFO - 计算 PreviousBatchEndTime 完成：总计 669 条，成功计算 402 条（其中有效machine记录 402 条）
+2025-11-21 13:16:06,774 - INFO - 加载历史SFC数据: 18800 行
+2025-11-21 13:16:06,855 - INFO - 数据合并完成：历史 18800 行 + 新增 669 行 = 合并后 19428 行
+2025-11-21 13:16:07,479 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 19428
+2025-11-21 13:16:27,809 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 19428
+2025-11-21 13:16:27,813 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251109200001.xlsx
+2025-11-21 13:16:27,813 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251108200001.xlsx
+2025-11-21 13:16:31,447 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251108200001.xlsx, 共 13926 行数据
+2025-11-21 13:16:33,725 - INFO - 文件 LC-20251108200001.xlsx: 总数据 13926 行，已处理 13288 行，新数据 638 行
+2025-11-21 13:16:34,151 - INFO - 状态更新完成：文件 LC-20251108200001.xlsx，新记录 13922 条，总记录数 20066 条
+2025-11-21 13:16:34,154 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:16:34,188 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:16:34,229 - INFO - 第一步CFN匹配后，还有 88 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:16:34,260 - INFO - 合并标准时间数据完成: 677 行
+2025-11-21 13:16:34,261 - INFO - 匹配到标准时间: 589 行
+2025-11-21 13:16:34,261 - INFO - 匹配到EH_machine(s): 589 行
+2025-11-21 13:16:34,262 - INFO - 匹配到EH_labor(s): 589 行
+2025-11-21 13:16:34,262 - INFO - 匹配到OEE: 677 行
+2025-11-21 13:16:34,262 - INFO - 匹配到Setup Time (h): 46 行
+2025-11-21 13:16:34,267 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 436 条，总计 677 条
+2025-11-21 13:16:34,274 - INFO - 计算 PreviousBatchEndTime 完成：总计 677 条，成功计算 428 条（其中有效machine记录 428 条）
+2025-11-21 13:16:34,512 - INFO - 加载历史SFC数据: 19428 行
+2025-11-21 13:16:34,579 - INFO - 数据合并完成：历史 19428 行 + 新增 677 行 = 合并后 20066 行
+2025-11-21 13:16:35,252 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 20066
+2025-11-21 13:16:56,010 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 20066
+2025-11-21 13:16:56,013 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251108200001.xlsx
+2025-11-21 13:16:56,015 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251107200001.xlsx
+2025-11-21 13:16:58,762 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251107200001.xlsx, 共 14006 行数据
+2025-11-21 13:16:59,907 - INFO - 文件 LC-20251107200001.xlsx: 总数据 14006 行，已处理 13621 行，新数据 385 行
+2025-11-21 13:17:01,090 - INFO - 状态更新完成：文件 LC-20251107200001.xlsx，新记录 14002 条，总记录数 20451 条
+2025-11-21 13:17:01,093 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:17:01,151 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:17:01,223 - INFO - 第一步CFN匹配后，还有 58 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:17:01,308 - INFO - 合并标准时间数据完成: 416 行
+2025-11-21 13:17:01,309 - INFO - 匹配到标准时间: 358 行
+2025-11-21 13:17:01,310 - INFO - 匹配到EH_machine(s): 358 行
+2025-11-21 13:17:01,311 - INFO - 匹配到EH_labor(s): 358 行
+2025-11-21 13:17:01,312 - INFO - 匹配到OEE: 416 行
+2025-11-21 13:17:01,313 - INFO - 匹配到Setup Time (h): 23 行
+2025-11-21 13:17:01,320 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 208 条，总计 416 条
+2025-11-21 13:17:01,340 - INFO - 计算 PreviousBatchEndTime 完成：总计 416 条，成功计算 197 条（其中有效machine记录 197 条）
+2025-11-21 13:17:01,713 - INFO - 加载历史SFC数据: 20066 行
+2025-11-21 13:17:01,809 - INFO - 数据合并完成：历史 20066 行 + 新增 416 行 = 合并后 20451 行
+2025-11-21 13:17:02,490 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 20451
+2025-11-21 13:17:21,778 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 20451
+2025-11-21 13:17:21,782 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251107200001.xlsx
+2025-11-21 13:17:21,783 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251102200001.xlsx
+2025-11-21 13:17:23,429 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251102200001.xlsx, 共 11054 行数据
+2025-11-21 13:17:24,873 - INFO - 文件 LC-20251102200001.xlsx: 总数据 11054 行，已处理 11020 行，新数据 34 行
+2025-11-21 13:17:25,388 - INFO - 状态更新完成：文件 LC-20251102200001.xlsx，新记录 11051 条，总记录数 20485 条
+2025-11-21 13:17:25,392 - INFO - 使用通配符查找到最新的标准时间表: SAP_Routing_latest.parquet
+2025-11-21 13:17:25,440 - INFO - 读取合并后的标准时间表: 38293 行
+2025-11-21 13:17:25,495 - INFO - 第一步CFN匹配后，还有 3 条记录未匹配，尝试使用Material Number匹配
+2025-11-21 13:17:25,546 - INFO - 合并标准时间数据完成: 34 行
+2025-11-21 13:17:25,547 - INFO - 匹配到标准时间: 31 行
+2025-11-21 13:17:25,550 - INFO - 匹配到EH_machine(s): 31 行
+2025-11-21 13:17:25,552 - INFO - 匹配到EH_labor(s): 31 行
+2025-11-21 13:17:25,553 - INFO - 匹配到OEE: 34 行
+2025-11-21 13:17:25,554 - INFO - 匹配到Setup Time (h): 0 行
+2025-11-21 13:17:25,560 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 25 条，总计 34 条
+2025-11-21 13:17:25,573 - INFO - 计算 PreviousBatchEndTime 完成：总计 34 条，成功计算 25 条（其中有效machine记录 25 条）
+2025-11-21 13:17:25,653 - INFO - 加载历史SFC数据: 20451 行
+2025-11-21 13:17:25,706 - INFO - 数据合并完成：历史 20451 行 + 新增 34 行 = 合并后 20485 行
+2025-11-21 13:17:26,564 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 20485
+2025-11-21 13:17:48,305 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 20485
+2025-11-21 13:17:48,309 - INFO - 文件处理完成并已合并到历史数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251102200001.xlsx
+2025-11-21 13:17:48,309 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251106200001.xlsx
+2025-11-21 13:17:50,332 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251106200001.xlsx, 共 13422 行数据
+2025-11-21 13:17:51,156 - INFO - 文件 LC-20251106200001.xlsx: 总数据 13422 行，已处理 13422 行，新数据 0 行
+2025-11-21 13:17:51,833 - INFO - 状态更新完成：文件 LC-20251106200001.xlsx，新记录 13418 条，总记录数 20485 条
+2025-11-21 13:17:51,835 - INFO - 文件无新数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251106200001.xlsx
+2025-11-21 13:17:51,835 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251105200001.xlsx
+2025-11-21 13:17:57,969 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251105200001.xlsx, 共 12777 行数据
+2025-11-21 13:18:01,237 - INFO - 文件 LC-20251105200001.xlsx: 总数据 12777 行，已处理 12777 行，新数据 0 行
+2025-11-21 13:18:01,840 - INFO - 状态更新完成：文件 LC-20251105200001.xlsx，新记录 12774 条，总记录数 20485 条
+2025-11-21 13:18:01,843 - INFO - 文件无新数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251105200001.xlsx
+2025-11-21 13:18:01,843 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251103200001.xlsx
+2025-11-21 13:18:06,784 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251103200001.xlsx, 共 11505 行数据
+2025-11-21 13:18:09,529 - INFO - 文件 LC-20251103200001.xlsx: 总数据 11505 行，已处理 11505 行，新数据 0 行
+2025-11-21 13:18:10,049 - INFO - 状态更新完成：文件 LC-20251103200001.xlsx，新记录 11502 条，总记录数 20485 条
+2025-11-21 13:18:10,052 - INFO - 文件无新数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251103200001.xlsx
+2025-11-21 13:18:10,053 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251104200001.xlsx
+2025-11-21 13:18:13,029 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251104200001.xlsx, 共 12142 行数据
+2025-11-21 13:18:16,475 - INFO - 文件 LC-20251104200001.xlsx: 总数据 12142 行，已处理 12142 行，新数据 0 行
+2025-11-21 13:18:16,911 - INFO - 状态更新完成：文件 LC-20251104200001.xlsx，新记录 12139 条，总记录数 20485 条
+2025-11-21 13:18:16,913 - INFO - 文件无新数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251104200001.xlsx
+2025-11-21 13:18:16,913 - INFO - 读取SFC文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251101200001.xlsx
+2025-11-21 13:18:19,087 - INFO - 读取SFC文件成功: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251101200001.xlsx, 共 10958 行数据
+2025-11-21 13:18:19,759 - INFO - 文件 LC-20251101200001.xlsx: 总数据 10958 行，已处理 10958 行，新数据 0 行
+2025-11-21 13:18:20,417 - INFO - 状态更新完成：文件 LC-20251101200001.xlsx，新记录 10955 条，总记录数 20485 条
+2025-11-21 13:18:20,420 - INFO - 文件无新数据: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\70-SFC导出数据\批次报工汇总报表\LC-20251101200001.xlsx
+2025-11-21 13:18:20,420 - INFO - 所有文件处理完成，最终数据行数: 20485
+2025-11-21 13:18:20,424 - INFO - 对所有合并后的数据统一计算 PreviousBatchEndTime
+2025-11-21 13:18:20,450 - INFO - 开始计算 PreviousBatchEndTime：有效machine记录 12646 条，总计 20485 条
+2025-11-21 13:18:20,593 - INFO - 计算 PreviousBatchEndTime 完成：总计 20485 条，成功计算 12632 条（其中有效machine记录 12632 条）
+2025-11-21 13:18:20,597 - INFO - 增量处理：状态已更新
+2025-11-21 13:18:21,443 - INFO - 已保存Parquet文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet, 行数: 20485
+2025-11-21 13:18:42,180 - INFO - 已保存Excel验证文件: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\excel\SFC_batch_report_latest.xlsx, 行数: 20485
+2025-11-21 13:18:42,183 - INFO - SFC数据已保存: C:\Users\huangk14\OneDrive - Medtronic PLC\CZ Production - 文档\General\POWER BI 数据源 V2\30-MES导出数据\publish\SFC_batch_report_latest.parquet
+2025-11-21 13:18:42,183 - INFO - 处理完成，耗时: 412.43秒

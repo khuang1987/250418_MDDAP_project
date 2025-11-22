@@ -54,5 +54,5 @@ python etl_sa.py --config custom_config.yaml
 - [ETL 流程概述](index.md)
 - [ETL 处理流程详解](etl-process.md)
 - [配置说明](configuration.md)
-- [SA 指标计算方法](../sa/calculation-definition.md)
+- [SA 指标计算方法](../kpi/sa.md#-计算方法与定义)
 

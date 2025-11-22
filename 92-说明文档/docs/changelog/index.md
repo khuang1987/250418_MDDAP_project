@@ -57,7 +57,7 @@
 - ✅ 导航配置文件 (`mkdocs.yml`)
 - ✅ KPI 概述页面 (`kpi/index.md`)
 - ✅ 供应链 KPI 页面 (`kpi/supply-chain.md`)
-- ✅ SA 概述页面 (`sa/index.md`)
+- ✅ SA 概述页面 (`kpi/sa.md`)
 - ✅ 首页导航 (`index.md`)
 
 **用户影响：**
@@ -109,9 +109,9 @@ else:
    ```
 
 **影响文档：**
-- ✅ `sa/calculation-definition.md` - 算法代码
-- ✅ `sa/field-specification.md` - 字段说明
-- ✅ `sa/examples.md` - 计算示例
+- ✅ `kpi/sa.md#-计算方法与定义` - 算法代码
+- ✅ `kpi/sa.md#-字段说明` - 字段说明
+- ✅ `kpi/sa.md#-计算示例` - 计算示例
 - ✅ `etl/configuration.md` - 配置说明
 - ✅ `etl/index.md` - ETL 概述
 - ✅ `etl/etl-process.md` - 处理流程
